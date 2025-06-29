@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #e0f7fa, #ffffff);
-  color: #2d3436;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f1f8e9, #ffffff);
+  color: #2c3e50;
   min-height: 100vh;
   padding: 20px;
 }
@@ -20,111 +20,108 @@ body {
   background: #ffffff;
   padding: 30px 25px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  color: #00796b;
+  color: #388e3c;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
 }
 
-/* Money Input Grid */
+/* Money Grid Layout */
 .money-grid {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* Each row */
 .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .row label {
-  flex: 1;
-  font-size: 17px;
-  color: #37474f;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  flex: 1.2;
 }
 
 .row input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
+  margin: 0 15px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  outline-color: #00796b;
+  outline-color: #4caf50;
   text-align: right;
+  min-width: 60px;
 }
 
 .row span {
   flex: 1;
+  font-size: 16px;
   text-align: right;
-  font-size: 17px;
+  color: #2e7d32;
   font-weight: 500;
-  color: #004d40;
 }
 
 /* Button */
 #calcBtn {
   width: 100%;
   margin-top: 30px;
-  padding: 14px;
-  background-color: #00796b;
+  padding: 12px;
+  background-color: #4caf50;
   color: white;
   font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 #calcBtn:hover {
-  background-color: #004d40;
+  background-color: #388e3c;
 }
 
-/* Total Output */
+/* Total Display */
 .total-box {
   margin-top: 30px;
-  text-align: center;
-  background-color: #e0f2f1;
+  background-color: #e8f5e9;
   padding: 18px;
+  text-align: center;
   border-radius: 10px;
-  border: 2px dashed #00796b;
+  border: 2px dashed #4caf50;
 }
 
 .total-box h2 {
-  font-size: 26px;
-  font-weight: bold;
-  color: #00695c;
+  font-size: 24px;
+  color: #1b5e20;
+  font-weight: 600;
 }
 
-/* Responsive Design */
+/* Responsive for Mobile */
 @media (max-width: 500px) {
   .row {
     flex-direction: column;
-    align-items: stretch;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 8px;
   }
 
-  .row label,
-  .row input,
-  .row span {
+  .row input, .row span {
+    margin: 0;
     width: 100%;
     text-align: left;
   }
 
-  .row span {
-    text-align: right;
-    margin-top: 5px;
-  }
-
-  h1 {
-    font-size: 24px;
+  .row label {
+    font-size: 15px;
   }
   }
