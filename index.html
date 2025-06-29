@@ -3,49 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Money Counter</title>
+  <title>Money Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>💵 Money Counter</h1>
+    <h1>Money Calculator</h1>
 
-    <div class="input-group">
-      <label for="note100">₹100 Notes</label>
-      <input type="number" id="note100" placeholder="Enter count" />
+    <div class="money-grid">
+      <!-- Denomination Row Template -->
+      <div class="row">
+        <label for="note500">₹500:</label>
+        <input type="number" id="note500" min="0" />
+        <span id="note500Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note200">₹200:</label>
+        <input type="number" id="note200" min="0" />
+        <span id="note200Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note100">₹100:</label>
+        <input type="number" id="note100" min="0" />
+        <span id="note100Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note50">₹50:</label>
+        <input type="number" id="note50" min="0" />
+        <span id="note50Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note20">₹20:</label>
+        <input type="number" id="note20" min="0" />
+        <span id="note20Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note10">₹10:</label>
+        <input type="number" id="note10" min="0" />
+        <span id="note10Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note5">₹5:</label>
+        <input type="number" id="note5" min="0" />
+        <span id="note5Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note2">₹2:</label>
+        <input type="number" id="note2" min="0" />
+        <span id="note2Total">₹0</span>
+      </div>
+
+      <div class="row">
+        <label for="note1">₹1:</label>
+        <input type="number" id="note1" min="0" />
+        <span id="note1Total">₹0</span>
+      </div>
     </div>
 
-    <div class="input-group">
-      <label for="note200">₹200 Notes</label>
-      <input type="number" id="note200" placeholder="Enter count" />
-    </div>
+    <button id="calcBtn">Calculate</button>
 
-    <div class="input-group">
-      <label for="note500">₹500 Notes</label>
-      <input type="number" id="note500" placeholder="Enter count" />
-    </div>
-
-    <div class="input-group">
-      <label for="coin10">₹10 Coins</label>
-      <input type="number" id="coin10" placeholder="Enter count" />
-    </div>
-
-    <div class="input-group">
-      <label for="coin5">₹5 Coins</label>
-      <input type="number" id="coin5" placeholder="Enter count" />
-    </div>
-
-    <div class="input-group">
-      <label for="coin2">₹2 Coins</label>
-      <input type="number" id="coin2" placeholder="Enter count" />
-    </div>
-
-    <button onclick="calculate()">Calculate</button>
-
-    <div id="result" class="result-box">
-      <h2>Result</h2>
-      <ul id="breakdown"></ul>
-      <h3 id="totalAmount">Total: ₹0</h3>
+    <div class="total-box">
+      <h2>Grand Total: <span id="grandTotal">₹0</span></h2>
     </div>
   </div>
 
