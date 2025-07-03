@@ -3,77 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Money Calculator</title>
+  <title>Cash Calculator</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>Money Calculator</h1>
+    <h1>💰 Banerjee Bhandar</h1>
+    <p style="color: #636e72; font-size: 0.9rem; margin-bottom: 20px;">Your friendly money counter with a cute design 🐣</p>
 
     <div class="money-grid">
-      <!-- Denomination Row Template -->
       <div class="row">
-        <label for="note500">₹500:</label>
-        <input type="number" id="note500" min="0" />
-        <span id="note500Total">₹0</span>
+        <label for="note2000">₹2000</label>
+        <input type="number" id="note2000" min="0" value="0">
+        <span id="total2000">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note200">₹200:</label>
-        <input type="number" id="note200" min="0" />
-        <span id="note200Total">₹0</span>
+        <label for="note500">₹500</label>
+        <input type="number" id="note500" min="0" value="0">
+        <span id="total500">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note100">₹100:</label>
-        <input type="number" id="note100" min="0" />
-        <span id="note100Total">₹0</span>
+        <label for="note200">₹200</label>
+        <input type="number" id="note200" min="0" value="0">
+        <span id="total200">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note50">₹50:</label>
-        <input type="number" id="note50" min="0" />
-        <span id="note50Total">₹0</span>
+        <label for="note100">₹100</label>
+        <input type="number" id="note100" min="0" value="0">
+        <span id="total100">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note20">₹20:</label>
-        <input type="number" id="note20" min="0" />
-        <span id="note20Total">₹0</span>
+        <label for="note50">₹50</label>
+        <input type="number" id="note50" min="0" value="0">
+        <span id="total50">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note10">₹10:</label>
-        <input type="number" id="note10" min="0" />
-        <span id="note10Total">₹0</span>
+        <label for="note20">₹20</label>
+        <input type="number" id="note20" min="0" value="0">
+        <span id="total20">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note5">₹5:</label>
-        <input type="number" id="note5" min="0" />
-        <span id="note5Total">₹0</span>
+        <label for="note10">₹10</label>
+        <input type="number" id="note10" min="0" value="0">
+        <span id="total10">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note2">₹2:</label>
-        <input type="number" id="note2" min="0" />
-        <span id="note2Total">₹0</span>
+        <label for="note5">₹5</label>
+        <input type="number" id="note5" min="0" value="0">
+        <span id="total5">₹0</span>
       </div>
-
       <div class="row">
-        <label for="note1">₹1:</label>
-        <input type="number" id="note1" min="0" />
-        <span id="note1Total">₹0</span>
+        <label for="note2">₹2</label>
+        <input type="number" id="note2" min="0" value="0">
+        <span id="total2">₹0</span>
+      </div>
+      <div class="row">
+        <label for="note1">₹1</label>
+        <input type="number" id="note1" min="0" value="0">
+        <span id="total1">₹0</span>
       </div>
     </div>
 
-    <button id="calcBtn">Calculate</button>
+    <button id="calcBtn">🎯 Calculate Total</button>
+    <button onclick="resetForm()" style="margin-top: 10px;">🔄 Reset</button>
 
     <div class="total-box">
-      <h2>Grand Total: <span id="grandTotal">₹0</span></h2>
+      <h2>Total Amount: <span id="grandTotal">₹0</span></h2>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
+          </html>
